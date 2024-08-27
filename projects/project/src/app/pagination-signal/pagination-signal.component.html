@@ -1,0 +1,9 @@
+<div class="pagination">
+  <button (click)="goPrevious()" [disabled]="currentPage() === 1">
+    上一頁
+  </button>
+  <span>第 {{ currentPage() }} 頁 / 總頁數 {{ pageCount }}</span>
+  <button (click)="goNext()" [disabled]="currentPage() === pageCount">
+    下一頁
+  </button>
+</div>
